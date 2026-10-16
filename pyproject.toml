@@ -14,6 +14,7 @@ dependencies = [
     "httpx-oauth>=0.17.0",
     "litestar-granian[uvloop]>=0.16.0",
     "litestar[cryptography,jwt,pydantic,redis,standard,structlog]>=2.24.0",
+    "lst-builder>=0.0.2",
     "pillow>=12.3.0",
     "pyotp>=2.10.0",
     "qrcode[pil]>=8.2",

@@ -76,6 +76,7 @@ dependencies = [
     { name = "httpx-oauth" },
     { name = "litestar", extra = ["cryptography", "jwt", "pydantic", "redis", "standard", "structlog"] },
     { name = "litestar-granian", extra = ["uvloop"] },
+    { name = "lst-builder" },
     { name = "pillow" },
     { name = "pyotp" },
     { name = "qrcode", extra = ["pil"] },
@@ -90,6 +91,7 @@ requires-dist = [
     { name = "httpx-oauth", specifier = ">=0.17.0" },
     { name = "litestar", extras = ["cryptography", "jwt", "pydantic", "redis", "standard", "structlog"], specifier = ">=2.24.0" },
     { name = "litestar-granian", extras = ["uvloop"], specifier = ">=0.16.0" },
+    { name = "lst-builder", specifier = ">=0.0.2" },
     { name = "pillow", specifier = ">=12.3.0" },
     { name = "pyotp", specifier = ">=2.10.0" },
     { name = "qrcode", extras = ["pil"], specifier = ">=8.2" },
@@ -813,6 +815,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/3f/b9/7e296aa1adada25cce8e5f89a996b0e38d852d93b1b656a2058226c542a2/litestar_htmx-0.5.0.tar.gz", hash = "sha256:e02d1a3a92172c874835fa3e6749d65ae9fc626d0df46719490a16293e2146fb", size = 119755, upload-time = "2025-06-11T21:19:45.573Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f2/24/8d99982f0aa9c1cd82073c6232b54a0dbe6797c7d63c0583a6c68ee3ddf2/litestar_htmx-0.5.0-py3-none-any.whl", hash = "sha256:92833aa47e0d0e868d2a7dbfab75261f124f4b83d4f9ad12b57b9a68f86c50e6", size = 9970, upload-time = "2025-06-11T21:19:44.465Z" },
+]
+
+[[package]]
+name = "lst-builder"
+version = "0.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "click" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/14/e0/45715239acb1ea5b2c11d800d026a2c25a523670de9a9dd9d04332bb1639/lst_builder-0.0.2.tar.gz", hash = "sha256:f9eeac6433e06818d8532c3ed9bab16ced16f7de6f871215c2a7d6b87c3b7bbf", size = 193631, upload-time = "2026-10-16T11:16:10.768Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c4/04/97bd0be0c82b415097b3b59f90c65ad22d35a0e7d35bcd191975cd051326/lst_builder-0.0.2-py3-none-any.whl", hash = "sha256:b30241301c7d541503ab3468f1296abf46e15b04192971a0f94f5bc42f45260a", size = 219180, upload-time = "2026-10-16T11:16:09.748Z" },
 ]
 
 [[package]]
