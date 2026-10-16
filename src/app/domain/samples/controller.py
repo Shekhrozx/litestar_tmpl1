@@ -59,7 +59,7 @@ class SampleController(Controller):
     )
     async def create_sample(self, samples_service: SampleService, data: s.SampleCreate) -> s.Sample:
         """Create a sample."""
-        obj = await samples_service.create(data.model_dump(), auto_commit=True)
+        obj = await samples_service.create(data, auto_commit=True)
         return samples_service.to_schema(obj, schema_type=s.Sample)
 
     # ----
@@ -75,7 +75,7 @@ class SampleController(Controller):
     ) -> s.Sample:
         """Update a sample."""
         obj = await samples_service.update(
-            data.model_dump(exclude_unset=True), item_id=sample_id, auto_commit=True
+            data, item_id=sample_id, auto_commit=True
         )
         return samples_service.to_schema(obj, schema_type=s.Sample)
 
